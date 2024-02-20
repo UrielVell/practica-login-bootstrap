@@ -1,0 +1,21 @@
+.root{
+    display: grid;
+    grid-template-columns: auto 45%;
+}
+.div-foto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('foto.png');
+    height: 100vh;
+    min-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .div-foto {
+    display: none;
+    }
+    .div-login {
+    margin-top: 50px;
+    grid-column: 1 / span 2;
+    }
+    }
